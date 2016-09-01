@@ -17,4 +17,4 @@ Want to contribute? [Follow these recommendations](https://github.com/clovisdasi
 See [Releases](https://github.com/clovisdasilvaneto/CSS-Brasil/releases) for detailed changelog.
 
 ## License
-[MIT License](https://github.com/clovisdasilvaneto/CSS-Brasil/blob/master/LICENSE.md) © [Clóvis Neto](http://clovisdsailvaneto.github.io/)
+[MIT License](https://github.com/clovisdasilvaneto/CSS-Brasil/blob/master/LICENSE.md) © [Clóvis Neto](http://clovisdasilvaneto.github.io/)
