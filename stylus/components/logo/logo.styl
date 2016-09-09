@@ -19,11 +19,11 @@
 		font-family: $font-title;
 		order: 2;
 		height: 99px;
+		width: 0;
 		border-right: solid 6px #000;
 		line-height: 83px;
 		font-size: 5em;
 		position: relative;
-		width: 0;
 		color: $yellow;
 		overflow: hidden;
 		white-space: nowrap;
@@ -108,4 +108,87 @@
 
 .logo-ico {
 	transform(scale(0.45));
+}
+
+@media only screen and (max-width: 1200px) {
+	#logo ~ p {
+		transform(scale(0.8));
+	}
+
+	#logo:before {
+		left: 7rem;
+	}
+
+	#logo:after {
+		right: 7rem;
+	}
+
+	#logo span {
+		width: 56%
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	#logo ~ p {
+		transform(scale(0.65));
+	}
+
+	#logo:before {
+		left: 5rem;
+	}
+
+	#logo:after {
+		right: 5rem;
+	}
+
+	#logo span {
+		width: 65%
+	}
+}
+
+@media only screen and (max-width: 820px) {
+
+	#logo-container {
+		display: none;
+		animation(none);
+	}
+
+	body #blog-content {
+		transform(scale(1));
+		animation(none);
+
+		h1 {
+			animation(none!important);
+			transform(scale(1)!important);
+		}
+
+		#blog-options {
+			display: block;
+
+
+			li {
+				display: block;
+				height: 50vh;
+				line-height: 50vh;
+				transform(translate3d(0,0,0)!important);
+				animation-fill-mode(none!important);
+				width: 100%;
+				animation(none!important);
+
+				&:first-child a {
+					color: $blue;
+				}
+
+				&:last-child a {
+					color: $yellow;
+				}
+			}
+
+			a {
+				text-shadow:initial!important;
+				animation(none!important);
+				transform(scale(1)!important);
+			}
+		}
+	}
 }
