@@ -38,12 +38,12 @@ Metalsmith(__dirname)
 	articles: {
 		pattern: 'articles/*.md',
 		sortBy: 'date',
-		reverse: false
+		reverse: true
 	},
 	playground: {
 		pattern: 'playground/*.md',
 		sortBy: 'date',
-		reverse: false
+		reverse: true
 	}
   }))
   .use(markdown())        // vai ler todos arquivos .md e transformar em um objeto
