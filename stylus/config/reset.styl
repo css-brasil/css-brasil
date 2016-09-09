@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li, ol {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, label, li {
+	color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6, .menu-title {
+	font-family: $font-title;
+
+	span, a, p {
+		font-family: $font-title;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1.5rem;
+}
+
+h2 {
+	font-size: 2.8rem;
+}
+
+h3 {
+	font-size: 2.6rem;
+}
+
+h4 {
+	font-size: 2.2rem;
+}
+
+h5 {
+	font-size: 2rem;
+}
+
+h6 {
+	font-size: 1.2rem;
+}
+
+p, label, span, a, li {
+	font-family: $font-text;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container-fluid {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0 1rem 2rem;
+
+	img {
+		max-width: 100%;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.flip-container {
+	perspective(1200);
+	overflow:hideen;
+	background: #000;
+	height:100vh;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.hide {
+	display: none;
+}
+
+.center-txt {
+	display: block;
+	text-align: center
+}

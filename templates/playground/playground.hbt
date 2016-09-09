@@ -1,0 +1,149 @@
+{{> header}}
+
+<div class="bg-yellow">
+	{{> navigation}}
+</div>
+
+<div id="content" class="bg-green">
+	<header class="header-site-title">
+		<h2 class="page-title yellow">{{this.name}}</h2>
+		<h1><a href="/" class="logo-ico"><img src="/images/css-brasil.png" class="static-logo" alt="CSS Brasil"></a></h1>
+	</header>
+
+	<section class="container-fluid">
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+		<article class="box bg-yellow playground-item">
+			<a href="#"><h3>CSS Brasil logo animation</h3></a>
+			<p class="credits">by <a href="#">Clóvis Neto</a></p>
+
+			<figure class="clear">
+				<a href="#"  class="image-box"><img src="/images/wrapper-1.jpg" alt="" /></a>
+				<figcaption>
+					<a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></a>
+				</figcaption>
+			</figure>
+		</article>
+	</section>
+</div>
+{{> footer}}

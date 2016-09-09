@@ -1,0 +1,88 @@
+@import "animations.styl";
+
+#blog-content {
+	width: 100%;
+	box-shadow: 0 0 6px #666;
+	height: 100vh;
+	overflow: auto;
+	position: absolute;
+	background: $green;
+	-webkit-font-smoothing: antialiased;
+	z-index: 2;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform(rotateY(180deg) scale(0));
+	animation(flipBlogContainer 1.5s linear 1 10s);
+	animation-fill-mode(forwards);
+
+	header {
+		h1 {
+			margin: 2rem 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -2.5rem;
+			margin-left: -5rem;
+			z-index: 10;
+			transform(scale(0));
+			animation(scaleIn 0.7s ease-out 1 11.5s);
+			animation-fill-mode(forwards);
+		}
+	}
+
+
+	#blog-options {
+		justify-content: center;
+		align-items: center;
+		flex-direction(row);
+		display(flex);
+
+		li {
+			padding: 2% 4%;
+			display(flex);
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			text-align: center;
+			width: 50%;
+			box-sizing(border-box);
+
+			a {
+				padding-bottom: .5rem;
+				margin-top: .5rem;
+				transition(all ease-out .5s);
+				cursor: pointer;
+			}
+
+
+			&:first-child {
+				background: $white;
+				transform(translateX(-100%));
+				animation(slideX 0.7s ease-out 1 11.5s);
+				animation-fill-mode(forwards);
+
+				a {
+					color: transparent;
+					text-shadow: 0 0 19rem $blue;
+					animation(fadeInBlue 0.7s linear 1 12s);
+					animation-fill-mode(forwards);
+				}
+
+				a:hover {
+					box-shadow: 0 5px 0 $blue;
+				}
+			}
+
+			&:last-child a {
+				color: transparent;
+				text-shadow: 0 0 19rem $yellow;
+				animation(fadeInYellow 0.7s linear 1 12s);
+				animation-fill-mode(forwards);
+
+				&:hover {
+					box-shadow: 0 5px 0 $yellow;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{{> header}}
+
+<div class="flip-container">
+	<section id="logo-container">
+		<div id="logo">
+		  <span></span>
+		</div>
+
+		<p>Um novo jeito de aprender CSS no Brasil</p>
+
+	</section>
+
+	<div id="blog-content">
+		<header>
+			<h1><a href="/"><img class="static-logo" src="/images/css-brasil.png" alt="CSS Brasil"></a></h1>
+		</header>
+
+		<nav>
+			<ul id="blog-options">
+				<li>
+					<a href="/articles" class="page-title menu-title">Artigos</a>
+				</li>
+
+				<li>
+					<a href="/playground" class="page-title menu-title">Playground</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+{{> footer}}

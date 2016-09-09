@@ -1,0 +1,47 @@
+.playground-item {
+	margin-right: 1.05rem;
+	float: left;
+	width: 45%;
+	margin-top: 2rem;
+	transform(scale(0));
+
+	&:nth-child(2n+2){
+		margin-right:0;
+	}
+
+	h3 {
+		color: #009b3a;
+		margin-bottom: 0;
+	}
+
+	.credits {
+		margin-bottom: 1rem;
+	}
+
+	.image-box {
+		float: left;
+		width: 35%;
+		margin-right: 1rem;
+		transition(all ease-out .5s);
+
+		&:hover {
+			transform(scale(0.95));
+		}
+	}
+
+	figcaption {
+		overflow: hidden;
+		float: none;
+	}
+
+	a:hover {
+		h3, h6 {
+			box-shadow: 0 3px 0 $green;
+		}
+	}
+}
+
+for number in (1..12)
+	.playground-item:nth-child({number})
+		animation(scaleIn 1s cubic-bezier(0.42, 0, 0.46, 1.28) (0.2 * number)s)
+		animation-fill-mode(forwards);

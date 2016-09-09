@@ -1,0 +1,111 @@
+@import "animations.styl";
+
+#logo-container {
+	z-index: 1;
+	-webkit-font-smoothing: antialiased;
+	background: $green;
+	align-items: center;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height:100vh;
+	justify-content: center;
+	animation(flipLogoContainer 1.5s linear 1 10s);
+	animation-fill-mode(forwards);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	p {
+		font-family: $font-title;
+		order: 2;
+		height: 99px;
+		border-right: solid 6px #000;
+		line-height: 83px;
+		font-size: 5em;
+		position: relative;
+		width: 0;
+		color: $yellow;
+		overflow: hidden;
+		white-space: nowrap;
+		animation-fill-mode(forwards);
+	}
+
+	display(flex);
+	flex-direction(column);
+}
+
+#logo {
+	width: 39%;
+	height: 23rem;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	order: 1;
+
+	display(flex);
+}
+
+#logo span {
+	width: 43%;
+	height: 65%;
+	background: #002776;
+	z-index: 3;
+	overflow: hidden;
+	position: relative;
+	border-radius: 100%;
+
+	transform(scale(0.3) translateY(-690px));
+	animation(enterCircle 4s ease-in-out 1);
+	animation-fill-mode(forwards);
+	display(flex);
+}
+
+#logo span:before {
+	width: 0;
+	height: 7rem;
+	content: "";
+	position: absolute;
+	font-family: arial;
+	border-radius: 50% 50% / 39px 38px;
+	color: #008000;
+	box-shadow: inset 0 24px 0 #fff, inset 0 153px 0 #002776;
+	transform-origin: 50% 50%;
+
+	transform(rotate(15deg) translateY(83px) translateX(16px));
+	animation(flag 0.5s linear 1 2s);
+	animation-fill-mode(forwards);
+}
+
+#logo:before {
+	content: "{";
+	left: 10rem;
+
+	animation(cssCodeLeft 1s cubic-bezier(0.42, 0, 0.46, 1.28) 1 2.5s);
+}
+
+#logo:after {
+	content: "}";
+	right: 10rem;
+
+	animation(cssCodeRight 1s cubic-bezier(0.42, 0, 0.46, 1.28) 1 2.5s);
+}
+
+#logo:before, #logo:after {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	font-size: 16.5rem;
+	top: 0.8rem;
+	color: $yellow;
+	z-index: 2;
+
+	animation-fill-mode(forwards);
+}
+
+.static-logo {
+	width: 160px;
+}
+
+.logo-ico {
+	transform(scale(0.45));
+}

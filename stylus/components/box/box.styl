@@ -1,0 +1,79 @@
+.box {
+	padding: 1.5rem;
+	position: relative;
+
+	.figure-box {
+		float: left;
+		margin-right: 1.5rem;
+		transition(all ease-out .5s);
+
+		&:hover {
+			transform(scale(0.95));
+		}
+	}
+
+	figcaption {
+		a {
+			display: block;
+		}
+	}
+
+	h3, h2, h4, h5, h6 {
+		margin-bottom: 1rem;
+	    display: inline-block;
+		transition(all ease-out .5s);
+	}
+
+	.featured h6 {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-family: $font-title;
+		font-size: 1.3rem;
+	}
+
+	.read-more {
+		position: absolute;
+		bottom: 1.2rem;
+		right: 1.5rem;
+	}
+
+	&.medium-content .read-more {
+		position: relative;
+		top: 0;
+		left: 0;
+		display: block;
+		margin-top: 1rem;
+		text-align: right;
+	}
+
+	&.medium-content {
+		margin-right: 1%;
+
+		&:nth-of-type(3n+3){
+			margin-right:0;
+		}
+
+		.figure-box {
+			margin-right: 0;
+		}
+	}
+
+	a h3:hover, a h6:hover {
+		box-shadow: 0 3px 0 $blue;
+	}
+
+	a p:hover, .read-more:hover {
+		text-decoration: underline;
+	}
+}
+
+.medium-content {
+	width: 28.8%;
+	float: left;
+}
+
+.featured-box .figure-box {
+	max-width: 520px;
+}

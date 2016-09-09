@@ -1,0 +1,40 @@
+.page-title {
+	font-size: 5rem;
+}
+
+.header-site-title {
+	text-align: center;
+	padding: 2rem 0 0;
+
+	.logo-ico {
+		position: relative;
+		display: inline-block;
+	}
+
+	.logo-ico:before, .logo-ico:after {
+		content: "";
+		width: 30rem;
+		position: absolute;
+		border-top: solid 0.1rem #ffe500;
+		top: 3rem;
+		transform(scale(0));
+		animation(scaleIn ease-in-out 1s 1);
+		animation-fill-mode(forwards);
+	}
+
+	.logo-ico:before {
+		left: -34rem;
+	}
+
+	.logo-ico:after {
+		right: -34rem;
+	}
+
+	h1 {
+		margin-bottom: 0;
+	}
+}
+
+.credits {
+	font-size: 0.71rem;
+}

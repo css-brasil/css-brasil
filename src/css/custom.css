@@ -1,0 +1,20 @@
+#logo-container p {
+	-webkit-animation: typing 6s steps(50, end) 3s 1, blink-caret .5s step-end infinite alternate;
+	-moz-animation: typing 6s steps(50, end) 3s 1, blink-caret .5s step-end infinite alternate;
+	-ms-animation: typing 6s steps(50, end) 3s 1, blink-caret .5s step-end infinite alternate;
+	-o-animation: typing 6s steps(50, end) 3s 1, blink-caret .5s step-end infinite alternate;
+	animation: typing 6s steps(50, end) 3s 1, blink-caret .5s step-end infinite alternate;
+}
+
+
+@keyframes typing {
+	to {
+		width: 76rem;
+	}
+}
+
+@keyframes blink-caret {
+	50% {
+		border-color: transparent;
+	}
+}

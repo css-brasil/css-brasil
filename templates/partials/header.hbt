@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		All Animation CSS3 Brasil -
+
+		{{#if this.name}}
+			{{this.name}}
+		{{/if}}
+
+		{{#if this.title}}
+			{{this.title}}
+		{{/if}}
+	</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="publisher" href="https://plus.google.com/u/0/107923948578708069647/posts"/>
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="" />
+	<meta property="og:title" content="{{#if this.name}}{{this.name}}{{/if}} {{#if this.title}}{{this.title}}{{/if}}" />
+	<meta property="og:description" content="{{#if this.subtitle}}{{this.subtitle}}{{/if}}{{#if this.description}}{{this.description}}{{/if}}" />
+	<meta property="og:site_name" content="All Animation CSS3 Brasil" />
+	<meta name="twitter:title" content="{{#if this.name}}{{this.name}}{{/if}} {{#if this.title}}{{this.title}}{{/if}}"/>
+	<meta name="twitter:site" content="@Clovissneto"/>
+	<meta name="twitter:domain" content="All Animation CSS3"/>
+	<meta name="description" content="{{#if this.subtitle}}{{this.subtitle}}{{/if}}{{#if this.description}}{{this.description}}{{/if}}">
+	<meta name="keywords" content="{{this.tags}}" />
+
+	<link href="https://fonts.googleapis.com/css?family=Dosis:400|Indie+Flower|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<script id="dsq-count-scr" src="//css-brasil.disqus.com/count.js" async></script>
+</head>
+<body>
+	<input type="checkbox" class="hide" id="navigation-action">
+	<a href="https://github.com/All-Animation-CSS3-Brasil/all-animation-css3-brasil.github.io">
+		<img class="github-fork-flag" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+	</a>

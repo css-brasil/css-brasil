@@ -1,0 +1,70 @@
+{{> header}}
+
+<div class="bg-positive">
+	{{> navigation}}
+</div>
+
+<div id="content">
+	<header class="header-site-title">
+		<h2 class="page-title positive">{{this.name}}</h2>
+		<h1><a href="/" class="logo-ico"><img src="/images/css-brasil.png" class="static-logo" alt="CSS Brasil"></a></h1>
+	</header>
+
+	<section class="container-fluid">
+		{{#each collections.articles}}
+			{{#ifCond @index 0}}
+				<article class="box bg-smoth featured-box">
+					<figure class="clear">
+						<a href="/{{this.path}}/" class="figure-box">
+							{{#if this.thumbnail}}
+								<img src="{{this.thumbnail}}" alt="{{this.title}}" />
+							{{else}}
+								{{#if this.featured}}
+									<img src="{{this.featured}}" alt="{{this.title}}" />
+								{{/if}}
+							{{/if}}
+						</a>
+
+						<figcaption class="featured">
+							<a href="/{{this.path}}/"><h3 class="positive">{{this.title}}</h3></a>
+							<a href="/{{this.path}}/"><h6 class="smoth-dark">Escrito por: <span class="positive">{{ this.author }}</span> em {{ dateFormat this.date }}</h6></a>
+
+							<a href="/{{this.path}}/"><p class="light-text">{{this.description}}</p></a>
+							<a href="/{{this.path}}/" class="read-more">{ Leia mais }</a>
+						</figcaption>
+					</figure>
+				</article>
+			{{/ifCond}}
+		{{/each}}
+
+		<div>
+			{{#each collections.articles}}
+				{{#if @index}}
+					<article class="box medium-content">
+						<figure class="clear">
+							<a href="/{{this.path}}/" class="figure-box">
+								{{#if this.thumbnail}}
+									<img src="{{this.thumbnail}}" alt="{{this.title}}" />
+								{{else}}
+									{{#if this.featured}}
+										<img src="{{this.featured}}" alt="{{this.title}}" />
+									{{/if}}
+								{{/if}}
+							</a>
+
+							<figcaption class="featured">
+								<a href="/{{this.path}}/"><h3 class="positive">{{this.title}}</h3></a>
+								<a href="/{{this.path}}/"><h6 class="smoth-dark">Escrito por: <span class="positive">{{ this.author }}</span> em {{ dateFormat this.date }}</h6></a>
+
+								<a href="/{{this.path}}/"><p class="light-text">{{this.description}}</p></a>
+								<a href="/{{this.path}}/" class="read-more">{ Leia mais }</a>
+							</figcaption>
+						</figure>
+					</article>
+				{{/if}}
+			{{/each}}
+		</div>
+
+	</section>
+</div>
+{{> footer}}
