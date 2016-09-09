@@ -183,7 +183,7 @@ a {
   display: block;
   text-align: center;
 }
-#content.green {
+#content.bg-green {
   min-height: 100vh;
 }
 .positive,
