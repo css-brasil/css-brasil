@@ -11,3 +11,6 @@ npm-debug.log
 
 # Ruby
 .sass-cache/
+
+# Generated Blog
+build/
