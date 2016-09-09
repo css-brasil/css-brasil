@@ -1,0 +1,64 @@
+@media only screen and (max-width: 1175px) {
+
+	.page-title {
+		font-size: 4rem;
+	}
+
+	.box.playground-item {
+		width: 49%;
+	}
+
+	.box {
+		margin-right: 1.4%;
+		width: 44%;
+		box-sizing(border-box);
+
+		&.featured-box {
+			width: 100%;
+
+			.figure-box {
+				max-width: 40%;
+			}
+		}
+
+		.read-more {
+			position: relative;
+			text-align: right;
+			margin-top: 1rem;
+			bottom: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	.box {
+		&.featured-box {
+			.figure-box {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+
+		img {
+			margin-bottom: 2rem;
+		}
+
+		width: 100%!important;
+	}
+
+	.btn-row .btn:first-child {
+		margin-bottom: 2rem;
+	}
+}
+
+
+@media only screen and (max-width: 740px) {
+	.header-site-title {
+		padding-top: 8rem;
+	}
+
+	#navigation-action:checked ~ div #navigation-list {
+		height: 17rem;
+		padding-top: 6rem;
+	}
+}
