@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>
-		All Animation CSS3 Brasil -
+		CSS Brasil -
 
 		{{#if this.name}}
 			{{this.name}}
@@ -21,12 +21,12 @@
 	<meta property="og:type" content="" />
 	<meta property="og:title" content="{{#if this.name}}{{this.name}}{{/if}} {{#if this.title}}{{this.title}}{{/if}}" />
 	<meta property="og:description" content="{{#if this.subtitle}}{{this.subtitle}}{{/if}}{{#if this.description}}{{this.description}}{{/if}}" />
-	<meta property="og:site_name" content="All Animation CSS3 Brasil" />
+	<meta property="og:site_name" content="CSS Brasil" />
 	<meta name="twitter:title" content="{{#if this.name}}{{this.name}}{{/if}} {{#if this.title}}{{this.title}}{{/if}}"/>
 	<meta name="twitter:site" content="@Clovissneto"/>
-	<meta name="twitter:domain" content="All Animation CSS3"/>
+	<meta name="twitter:domain" content="CSS Brasil"/>
 	<meta name="description" content="{{#if this.subtitle}}{{this.subtitle}}{{/if}}{{#if this.description}}{{this.description}}{{/if}}">
-	<meta name="keywords" content="{{this.tags}}" />
+	<meta name="keywords" content="{{#if this.tags}}{{this.tags}}{{/if}}{{#if this.keywords}}{{this.keywords}}{{/if}}" />
 
 	<link href="https://fonts.googleapis.com/css?family=Dosis:400|Indie+Flower|Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="/css/font-awesome.min.css">
