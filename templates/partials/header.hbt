@@ -22,9 +22,11 @@
 	<meta property="og:title" content="{{#if this.name}}{{this.name}}{{/if}} {{#if this.title}}{{this.title}}{{/if}}" />
 	<meta property="og:description" content="{{#if this.subtitle}}{{this.subtitle}}{{/if}}{{#if this.description}}{{this.description}}{{/if}}" />
 	<meta property="og:site_name" content="CSS Brasil" />
+    <meta property="og:image" content="http://cssbrasil.org/images/css-brasil-logo.png" />
 	<meta name="twitter:title" content="{{#if this.name}}{{this.name}}{{/if}} {{#if this.title}}{{this.title}}{{/if}}"/>
 	<meta name="twitter:site" content="@Clovissneto"/>
 	<meta name="twitter:domain" content="CSS Brasil"/>
+	<meta name="twitter:image:src" content="http://cssbrasil.org/images/css-brasil-logo.png" />
 	<meta name="description" content="{{#if this.subtitle}}{{this.subtitle}}{{/if}}{{#if this.description}}{{this.description}}{{/if}}">
 	<meta name="keywords" content="{{#if this.tags}}{{this.tags}}{{/if}}{{#if this.keywords}}{{this.keywords}}{{/if}}" />
 
