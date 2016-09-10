@@ -52,6 +52,9 @@
 .credits {
   font-size: 0.71rem;
 }
+.off-topic {
+  text-decoration: line-through;
+}
 .read-more {
   color: #002776;
   font-size: 1.6rem;
