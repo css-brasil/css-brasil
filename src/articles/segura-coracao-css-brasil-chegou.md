@@ -39,5 +39,6 @@ O melhor é que nosso blog é todo open source e está disponível no [github](h
 Não vou me prologar muito neste post, pois ainda teremos um próximo, explicando a formatação e etc...
 
 Então, é isto galera, esse post foi só para agitar um pouquinho nosso final de semana e deixar vocês ligados nos próximos dias para o nosso primeiro artigo técnico \o/\o/
-
-Um forte abraço!
+<br>
+<br>
+*Um forte abraço!*
