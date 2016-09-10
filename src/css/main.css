@@ -183,6 +183,9 @@ a {
   display: block;
   text-align: center;
 }
+#content {
+  overflow: hidden;
+}
 #content.bg-green {
   min-height: 100vh;
 }
@@ -1692,12 +1695,23 @@ body a.btn.positive {
     margin-bottom: 2rem;
   }
 }
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 600px) {
   .header-site-title {
     padding-top: 8rem;
   }
   #navigation-action:checked ~ div #navigation-list {
     height: 17rem;
     padding-top: 6rem;
+  }
+  .playground-item .image-box {
+    float: none;
+    width: 100%;
+  }
+  #navigation-action:checked ~ div #navigation-list li {
+    float: none;
+    margin: 1.6rem 4.4rem 0;
+  }
+  #navigation-action:checked ~ div #navigation-list li i {
+    display: inline;
   }
 }
