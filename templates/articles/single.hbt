@@ -1,4 +1,5 @@
 {{> header}}
+<script id="dsq-count-scr" src="//css-brasil.disqus.com/count.js" async></script>
 
 <div class="bg-positive">
 	{{> navigation}}
