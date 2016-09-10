@@ -5,6 +5,7 @@ url: criando-menu-off-canvas-com-css
 date: 2016-09-06
 description: Hoje é um dia especial, pois este é o primeiro de muitos exemplos "shows" que faremos utilizando apenas CSS3.
 author: Clóvis Neto
+draft: true
 featured: /images/menu-wrapper.jpg
 tags: menu off canvas
 example_url: http://codepen.io/clovisneto/full/zrMOKZ/
