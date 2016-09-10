@@ -4,7 +4,7 @@ description: Com exemplos fantásticos e artigos incríveis, criamos o CSS Brasi
 date: 2016-09-6
 draft: true
 template: articles/single.hbt
-url: segura-coracao-o-css-brasil-chegou
+url: exemplo-de-post
 featured: /images/css-brasil-wrapper.jpg
 author: Clóvis Neto
 tags: Pessoal
