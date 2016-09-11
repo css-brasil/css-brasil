@@ -1,6 +1,6 @@
 ---
 title: Seguuura coração, o CSS Brasil chegou!
-description: Com exemplos fantásticos e artigos incríveis, criamos o CSS Brasil com a expectativa de compartilhar conhecimento e promover taletos.
+description: Com exemplos fantásticos e artigos incríveis, criamos o CSS Brasil com a expectativa de compartilhar conhecimento e promover talentos.
 date: 2016-09-6
 template: articles/single.hbt
 url: segura-coracao-o-css-brasil-chegou
