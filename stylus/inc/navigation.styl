@@ -6,6 +6,34 @@
 	text-align: center;
 	left: 3.5rem;
 	top: 3.8rem;
+
+	.btn-icon {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin-top: 25px;
+    margin-left: 15px;
+    position: relative;
+    transition: all .3s
+
+    &:before, &:after {
+	    content: '';
+	    display: block;
+	    width: 30px;
+	    height: 3px;
+	    background: #fff;
+	    position: absolute;
+	    transition: all .3s
+    }
+
+    &:before {
+    	top: -10px;
+    }
+    &:after {
+    	bottom: -10px;
+    }
+	}
 }
 
 #navigation-list {
@@ -69,6 +97,19 @@
 }
 
 #navigation-action:checked {
+	~ div #menu-ico {
+			.btn-icon {
+				background: transparent;
+
+				&:before {
+					transform: rotate(135deg) translate3d(7px, -7px, 0);
+				}
+				&:after {
+					transform: rotate(-135deg) translate3d(7px, 7px, 0);
+				}
+			}
+		}
+	}
 	~ div #navigation-list {
 		width: 100%;
 		height: 11rem;
