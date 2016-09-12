@@ -976,6 +976,40 @@ body a.btn.positive {
   left: 3.5rem;
   top: 3.8rem;
 }
+#menu-ico .btn-icon {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  display: block;
+  margin-top: 25px;
+  margin-left: 15px;
+  position: relative;
+  -webkit-transition: all;
+  -moz-transition: all;
+  -ms-transition: all;
+  -o-transition: all;
+  transition: all;
+}
+#menu-ico .btn-icon:before,
+#menu-ico .btn-icon:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#menu-ico .btn-icon:before {
+  top: -10px;
+}
+#menu-ico .btn-icon:after {
+  bottom: -10px;
+}
 #navigation-list {
   z-index: 1;
   top: 0;
@@ -1049,6 +1083,23 @@ body a.btn.positive {
 .bg-yellow #navigation-list,
 .bg-yellow #navigation-list a {
   color: #009b3a;
+}
+#navigation-action:checked ~ div #menu-ico .btn-icon {
+  background: transparent;
+}
+#navigation-action:checked ~ div #menu-ico .btn-icon:before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+#navigation-action:checked ~ div #menu-ico .btn-icon:after {
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 #navigation-action:checked ~ div #navigation-list {
   width: 100%;
