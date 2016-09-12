@@ -12,7 +12,7 @@
 
 	<section class="container-fluid">
 		{{#each collections.articles}}
-			{{#ifCond @index 0}}
+			{{#ifCond this.is_box_featured true}}
 				<article class="box bg-smoth featured-box">
 					<figure class="clear">
 						<a href="/{{this.path}}/" class="figure-box">
@@ -39,29 +39,31 @@
 
 		<div>
 			{{#each collections.articles}}
-				{{#if @index}}
-					<article class="box medium-content">
-						<figure class="clear">
-							<a href="/{{this.path}}/" class="figure-box">
-								{{#if this.thumbnail}}
-									<img src="{{this.thumbnail}}" alt="{{this.title}}" />
-								{{else}}
-									{{#if this.featured}}
-										<img src="{{this.featured}}" alt="{{this.title}}" />
+				{{#ifCond this.is_box_featured null}}
+					{{#ifCond this.is_external null}}
+						<article class="box medium-content">
+							<figure class="clear">
+								<a href="/{{this.path}}/" class="figure-box">
+									{{#if this.thumbnail}}
+										<img src="{{this.thumbnail}}" alt="{{this.title}}" />
+									{{else}}
+										{{#if this.featured}}
+											<img src="{{this.featured}}" alt="{{this.title}}" />
+										{{/if}}
 									{{/if}}
-								{{/if}}
-							</a>
+								</a>
 
-							<figcaption class="featured">
-								<a href="/{{this.path}}/"><h3 class="positive">{{this.title}}</h3></a>
-								<a href="/{{this.path}}/"><h6 class="smoth-dark">Escrito por: <span class="positive">{{ this.author }}</span> em {{ dateFormat this.date }}</h6></a>
+								<figcaption class="featured">
+									<a href="/{{this.path}}/"><h3 class="positive">{{this.title}}</h3></a>
+									<a href="/{{this.path}}/"><h6 class="smoth-dark">Escrito por: <span class="positive">{{ this.author }}</span> em {{ dateFormat this.date }}</h6></a>
 
-								<a href="/{{this.path}}/"><p class="light-text">{{this.description}}</p></a>
-								<a href="/{{this.path}}/" class="read-more">{ Leia mais }</a>
-							</figcaption>
-						</figure>
-					</article>
-				{{/if}}
+									<a href="/{{this.path}}/"><p class="light-text">{{this.description}}</p></a>
+									<a href="/{{this.path}}/" class="read-more">{ Leia mais }</a>
+								</figcaption>
+							</figure>
+						</article>
+					{{/ifCond}}
+				{{/ifCond}}
 			{{/each}}
 		</div>
 
