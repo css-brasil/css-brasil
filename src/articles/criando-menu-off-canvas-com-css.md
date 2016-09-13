@@ -5,7 +5,6 @@ url: criando-menu-off-canvas-com-css
 date: 2016-09-06
 description: Hoje é um dia especial, pois este é o primeiro de muitos exemplos "shows" que faremos utilizando apenas CSS3.
 author: Clóvis Neto
-draft: true
 featured: /images/menu-wrapper.jpg
 tags: menu off canvas
 example_url: http://codepen.io/clovisneto/full/zrMOKZ/
@@ -26,11 +25,11 @@ O funcionamento do menu é bem simples e consiste apenas em 3 camadas (apesar de
 
 <br>
 
-O <span class="green">wrapper</span> será nossa view, que terá a largura do tamanho da nossa tela, a <span class="green">navegação</span> será o nosso menu que fica escondido no <span class="green">eixo X da tela</span> e o canvas será o conteúdo da nossa página.
+O <span class="green">wrapper</span> será nossa view, que terá a largura do tamanho da nossa tela, a <span class="green">navegação</span> será o nosso menu que fica escondido no <span class="green">eixo X da tela</span> e o <span class="green">canvas</span> será o conteúdo da nossa página.
 
-<p class="citation">Como diria minha mãe, é pau pra dar em burro :)</p>
+<br>
 
-Iremos controlar o estado de aberto e fechado pelo css, utilizando o seletor <span class="green">:checked</span> e selecionando o irmão por meio do seletor de herança <span class="green">~</span> (til), e no html colocaremos um <span class="green">input type="checkbox" id="menu"</span> para fazer toda mágica acontecer :)
+Iremos controlar o estado de aberto e fechado do nosso menu pelo css, utilizando o seletor <span class="green">:checked</span> e selecionando o irmão por meio do seletor de herança <span class="green">~</span> (til), logo depois colocaremos um <span class="green">input type="checkbox" id="menu"</span> no html para fazer toda mágica acontecer :)
 
 <br>
 
@@ -44,9 +43,9 @@ A estrutura é muiito simples, seguindo os conceitos explicados a cima, temos o 
 
 <script src="https://gist.github.com/clovisdasilvaneto/0e9bfa72ed31edba723dd73472e14b6d.js"></script>
 
-Note que temos dois <span class="green">label for=""</span> no nosso trecho HTML. Eles servem para marcar ou desmarcar o checkbox que controla o estado de aberto / fechado do nosso menu.
+Note que temos dois <span class="green">label for=""</span> no nosso trecho HTML. Eles servem para marcar ou desmarcar o checkbox que controla o estado de aberto / fechado do menu off canvas.
 
-Esconderemos o checkbox colocando um <span class="green">display: none</span> e logo em seguida colocaremos um <span class="green">translate3d(-100%,0,0)</span>, no menu para ele fique escondido no canto esquerdo da tela, ex:
+Esconderemos o checkbox colocando um <span class="green">display: none</span> em seguida adicionamos a propriedade <span class="green">transform: translate3d(-100%,0,0)</span>, no menu para ele fique escondido no canto esquerdo da tela, ex:
 
 <script src="https://gist.github.com/clovisdasilvaneto/238aa51a573e978e012c4facdfef7c72.js"></script>
 
@@ -54,7 +53,7 @@ Agora precisamos verificar o estado de <span class="green">:checked</span> do me
 
 <script src="https://gist.github.com/clovisdasilvaneto/5db3e4a93f2212291b5acd8dd78b744e.js"></script>
 
-Colocaremos todos os links do menu com um <span class="green">opacity: 0</span> e  um <span class="green">transform: translate3d(0, 40px, 0)</span> para que eles apareçam de baixo para cima.
+Colocaremos todos os links com um <span class="green">opacity: 0</span> e <span class="green">transform: translate3d(0, 40px, 0)</span> para que eles apareçam de baixo para cima.
 
 <script src="https://gist.github.com/clovisdasilvaneto/a142aacd94c2daaf2f484cfeb61a1577.js"></script>
 
