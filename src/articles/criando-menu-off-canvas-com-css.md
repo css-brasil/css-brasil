@@ -8,7 +8,6 @@ author: Clóvis Neto
 featured: /images/menu-wrapper.jpg
 tags: menu off canvas
 example_url: http://codepen.io/clovisneto/full/zrMOKZ/
-source: http://codepen.io/clovisneto/pen/zrMOKZ
 ---
 
 Este é o nosso primeiro post técnico do CSS Brasil, e para começar, nada melhor que compartilhar a técnica utilizada para criar um menu off-canvas, utilizando apenas CSS <3
