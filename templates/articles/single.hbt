@@ -24,12 +24,14 @@
 					<img src="{{this.featured}}" alt="{{this.title}}">
 				{{/if}}
 
-				{{#if this.source}}
-					<figcaption class="btn-row">
+				<figcaption class="btn-row">
+					{{#if this.example_url }}
 						<a href="{{ this.example_url }}" class="btn positive">Exemplo</a>
+					{{/if}}
+					{{#if this.source }}
 						<a href="{{ this.source }}" class="btn positive">Baixar código</a>
-					</figcaption>
-				{{/if}}
+					{{/if}}
+				</figcaption>
 			</figure>
 
 			{{{contents}}}
