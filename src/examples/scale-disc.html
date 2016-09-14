@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scale Disc</title>
+	<style>
+		body {
+			background: #333;
+			-webkit-perspective: 390px;
+			-moz-perspective: 390px;
+			-ms-perspective: 390px;
+			-o-perspective: 390px;
+			perspective: 390px;
+			overflow: hidden;
+		}
+
+		.disc-container {
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			-o-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			display: flex;
+			height: 100vh;
+			position: relative;
+			align-items: center;
+			justify-content: center;
+			-webkit-animation: rotateContainer infinite ease-in-out 2s;
+			-moz-animation: rotateContainer infinite ease-in-out 2s;
+			-o-animation: rotateContainer infinite ease-in-out 2s;
+			animation: rotateContainer infinite ease-in-out 2s;
+		}
+
+		.disc-container:before, .disc-container:after {
+			border: dotted 5rem;
+			width: 12rem;
+			height: 12rem;
+			border-radius: 100%;
+			display: block;
+			content: "";
+			-webkit-animation: scale ease-in-out infinite both reverse 3s;
+			-moz-animation: scale ease-in-out infinite both reverse 3s;
+			-o-animation: scale ease-in-out infinite both reverse 3s;
+			animation: scale ease-in-out infinite both reverse 3s;
+		}
+
+		.disc-container:before {
+			border-color: #000;
+			top: 50%;
+			margin-top: -176px;
+			position: absolute;
+			-webkit-animation-delay: -1.2s;
+			-moz-animation-delay: -1.2s;
+			-o-animation-delay: -1.2s;
+			animation-delay: -1.2s;
+		}
+
+		.disc-container:after {
+			border-color: #006720;
+		}
+
+		@keyframes scale {
+			0%, 100% {
+				transform: translateZ(0) rotateZ(0);
+			}
+
+			25% {
+				transform: translateZ(-140px) rotateZ(28deg);
+			}
+
+			50% {
+				transform: translateZ(0) rotateZ(28deg);
+			}
+
+			75% {
+				transform: translateZ(-140px) rotateZ(0);
+			}
+		}
+
+		@keyframes rotateContainer {
+			0%, 100%{
+				transform: rotateX(8.75deg) rotateY(35deg)
+			}
+
+			50% {
+				transform: rotateX(25deg) rotateY(-45deg) rotate(0deg)
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="disc-container"></div>
+</body>
+</html>
