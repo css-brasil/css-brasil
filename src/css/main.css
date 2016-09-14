@@ -1445,6 +1445,7 @@ body a.btn.positive {
   margin-right: 1.05rem;
   float: left;
   width: 45%;
+  min-height: 310px;
   margin-top: 2rem;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
