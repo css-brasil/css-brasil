@@ -5,7 +5,6 @@ date: 2016-09-6
 template: articles/single.hbt
 url: segura-coracao-o-css-brasil-chegou
 featured: /images/css-brasil-wrapper.jpg
-is_box_featured: true
 author: Clóvis Neto
 tags: Pessoal
 ---
