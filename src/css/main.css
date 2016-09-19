@@ -145,7 +145,8 @@ p,
 label,
 span,
 a,
-li {
+li,
+em {
   font-family: 'Roboto', sans-serif;
 }
 a {
@@ -192,30 +193,38 @@ a {
 #content.bg-green {
   min-height: 100vh;
 }
-.positive,
-.post .positive {
+body .post .positive,
+body .positive,
+body .post .post .positive {
   color: #002776;
 }
-.green,
-.post .green {
+body .post .green,
+body .green,
+body .post .post .green {
   color: #009b3a;
 }
-.yellow {
+body .post .yellow,
+body .yellow {
   color: #ffe500;
 }
-.bg-smoth {
+body .post .bg-smoth,
+body .bg-smoth {
   background: #f3f3f3;
 }
-.bg-green {
+body .post .bg-green,
+body .bg-green {
   background: #009b3a;
 }
-.bg-yellow {
+body .post .bg-yellow,
+body .bg-yellow {
   background: #ffe500;
 }
-.bg-positive {
+body .post .bg-positive,
+body .bg-positive {
   background: #002776;
 }
-.smoth-dark {
+body .post .smoth-dark,
+body .smoth-dark {
   color: #ccc;
 }
 /* Global Components */
@@ -952,12 +961,16 @@ body a.btn.positive {
   }
 }
 /* Github Components */
-.gist {
+body .gist {
   margin: 2rem 0;
   display: block;
 }
-.gist * {
+body .gist * {
   font-size: 16px !important;
+}
+body .gist .blob-wrapper {
+  max-height: 580px;
+  overflow: scroll;
 }
 .github-fork-flag {
   position: absolute;
@@ -1412,18 +1425,37 @@ body a.btn.positive {
 }
 .post .note,
 .post .dark-note,
-.post .text-note {
+.post .text-note,
+.post .danger-note {
   padding: 2rem;
-  border: solid 4px #002776;
   margin: 2rem 0;
+}
+.post .note,
+.post .dark-note,
+.post .text-note {
+  border: solid 4px #002776;
 }
 .post .dark-note {
   background: rgba(0,39,118,0.66);
   color: #fff;
 }
+.post .danger-note {
+  background: #f44336;
+  color: #fff;
+}
+.post .danger-note a {
+  color: #ffe500;
+}
+.post .danger-note a:hover {
+  box-shadow: none;
+  text-decoration: underline;
+}
 .post .text-note {
   border: solid 3px #009b3a;
   padding: 0.1rem 1rem;
+}
+.post .text-note.yellow {
+  border-color: #ffe500;
 }
 .post .citation {
   margin: 2rem 0;
@@ -1437,6 +1469,10 @@ body a.btn.positive {
 .post-comments h4 {
   margin-top: 3rem;
   text-align: center;
+}
+body .legend {
+  margin-top: -35px;
+  font-size: 16px;
 }
 .playground-item:nth-child(2n+1) {
   clear: both;
