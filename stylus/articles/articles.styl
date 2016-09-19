@@ -57,10 +57,13 @@
 		}
 	}
 
-	.note, .dark-note, .text-note {
+	.note, .dark-note, .text-note, .danger-note {
 		padding: 2rem;
-		border: solid 4px $blue;
 		margin: 2rem 0;
+	}
+
+	.note, .dark-note, .text-note {
+		border: solid 4px $blue;
 	}
 
 	.dark-note {
@@ -68,9 +71,27 @@
 		color: $white;
 	}
 
+	.danger-note {
+		background: $red;
+		color: $white;
+
+		a {
+			color: $yellow;
+
+			&:hover {
+				box-shadow: none;
+				text-decoration: underline;
+			}
+		}
+	}
+
 	.text-note {
 		border: solid 3px $green;
 		padding: 0.1rem 1rem;
+
+		&.yellow {
+			border-color: $yellow;
+		}
 	}
 
 	.citation {
@@ -88,4 +109,9 @@
 .post-comments h4 {
 	margin-top: 3rem;
 	text-align: center;
+}
+
+body .legend {
+	margin-top:-35px;
+	font-size: 16px;
 }
