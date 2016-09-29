@@ -1,0 +1,206 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body {
+	background: #f6f6f6;
+}
+
+ul, li {
+	list-style: none;
+}
+
+.slider {
+	height: 100vh;
+}
+
+.slider li {
+	width: 100%;
+	z-index: 1;
+	top: 50%;
+	overflow: hidden;
+	margin-top: -250px;
+	position: absolute;
+	transition: .3s z-index linear;
+	z-index: 1;
+	perspective: 300px;
+}
+
+.slider-item {
+	padding: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	transition: all ease-out .2s;
+	transform: translateX(300%);
+	visibility: hidden;
+}
+
+.slider-circle {
+	background: #fff;
+	width: 28rem;
+	height: 28rem;
+	border-radius:100%;
+	box-shadow: 0 0 1px #fff;
+	position: relative;
+	z-index: 2;
+}
+
+.slider img {
+	margin: 1.4rem 0;
+	max-width: 100%;
+}
+
+.slider p {
+	color: #666;
+	font-family: "PT Sans", arial;
+	width: 100%;
+	text-align: center;
+	margin-top: 2rem;
+	opacity: 0;
+	transform: translateX(3rem);
+	transition: all linear .3s;
+	font-size: 20px;
+	text-transform: uppercase;;
+}
+
+.slider-price {
+	color: #000;
+}
+
+.prev, .next {
+	display: block;
+	-webkit-transform:scale(0.7);
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	z-index: 1;
+	margin-top: -15rem;
+}
+
+.prev {
+	left: -246px;
+}
+
+.next {
+	right: -246px;
+}
+
+
+/* ----------------------------- Slides Passados ----------------------------- */
+#slider-1:checked ~ li:nth-of-type(4) .slider-item, #slider-1:checked ~ li:nth-of-type(3) .slider-item,
+#slider-2:checked ~ li:nth-of-type(1) .slider-item,
+#slider-2:checked ~ li:nth-of-type(4) .slider-item, #slider-3:checked ~ li:nth-of-type(1) .slider-item,
+#slider-3:checked ~ li:nth-of-type(2) .slider-item, #slider-4:checked ~ li:nth-of-type(3) .slider-item,
+#slider-4:checked ~ li:nth-of-type(3) .slider-item{
+	transform:translateX(-300%) translateZ(-170px);
+	visibility: hidden;
+}
+
+/* ----------------------------- Próximos Slides ----------------------------- */
+#slider-3:checked ~ li:nth-of-type(4) .slider-item, #slider-4:checked ~ li:nth-of-type(1) .slider-item,
+#slider-2:checked ~ li:nth-of-type(3) .slider-item {
+	transform:translateX(300%) translateZ(-170px);
+	visibility: hidden;
+}
+
+/* ----------------------------- Animação de checado  ----------------------------- */
+#slider-1:checked ~ li:nth-of-type(1), #slider-2:checked ~ li:nth-of-type(2), #slider-3:checked ~ li:nth-of-type(3),
+#slider-4:checked ~ li:nth-of-type(4){
+	z-index: 2;
+}
+
+#slider-1:checked ~ li:nth-of-type(1) p, #slider-2:checked ~ li:nth-of-type(2) p, #slider-3:checked ~ li:nth-of-type(3) p,
+#slider-4:checked ~ li:nth-of-type(4) p{
+	transform: translateX(0);
+	opacity: 1;
+	transition-delay: .3s;
+}
+
+#slider-1:checked ~ li:nth-of-type(1) .slider-item, #slider-2:checked ~ li:nth-of-type(2) .slider-item,
+#slider-3:checked ~ li:nth-of-type(3) .slider-item, #slider-4:checked ~ li:nth-of-type(4) .slider-item{
+	transform:translateX(0);
+	visibility: visible;
+}
+
+#slider-1:checked ~ li:nth-of-type(1) .next, #slider-2:checked ~ li:nth-of-type(2) .next,
+#slider-3:checked ~ li:nth-of-type(3) .next, #slider-4:checked ~ li:nth-of-type(4) .next{
+	animation: controllScale .3s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
+#slider-1:checked ~ li:nth-of-type(1) .prev, #slider-2:checked ~ li:nth-of-type(2) .prev,
+#slider-3:checked ~ li:nth-of-type(3) .prev, #slider-4:checked ~ li:nth-of-type(4) .prev{
+	animation: controllScale .3s ease-in-out 1 .15s;
+	animation-fill-mode: forwards;
+}
+
+footer {
+	padding: .4rem 0 .2rem;
+	background: #4CAF50;
+	z-index: 99;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+footer a {
+	display: inline-block;
+	font-family: "PT Sans", arial;
+	color: #fff;
+	position: relative;
+	transform: translateY(-16px);
+	margin-right: 12px;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+footer img {
+	width: 80px;
+}
+
+@keyframes enterFigureLeft {
+	0%, 100%{
+		z-index: 99;
+	}
+
+	50% {
+		transform: translateX(-5rem);
+	}
+
+	80% {
+		transform: translateX(2rem);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes exitLeft {
+	0%{
+		z-index: 99;
+	}
+
+	100% {
+		transform: translateX(-200%);
+		z-index: 1;
+	}
+}
+
+@keyframes controllScale {
+	0%, 100% {
+		z-index: 1;
+	}
+
+	30%{
+		transform: scale(1)
+	}
+
+	90% {
+		transform: scale(0.7)
+	}
+}
