@@ -7,7 +7,6 @@ description: Aprenda a criar um efeito de glitch apenas utilizando CSS3 com keyf
 author: Clóvis Neto
 featured: /images/brasil.png
 tags: glitch, css clip, animações
-is_box_featured: true
 example_url: https://codepen.io/clovisneto/full/bwZoqb/
 ---
 
