@@ -20,48 +20,60 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<ul class="slider">
-		<input type="radio" name="slider-controlls" checked id="slider-1" hidden>
-		<input type="radio" name="slider-controlls" id="slider-2" hidden>
-		<input type="radio" name="slider-controlls" id="slider-3" hidden>
-		<input type="radio" name="slider-controlls" id="slider-4" hidden>
+	<input type="radio" name="slide-controlls" checked id="slide-1" hidden>
+	<input type="radio" name="slide-controlls" id="slide-2" hidden>
+	<input type="radio" name="slide-controlls" id="slide-3" hidden>
+	<input type="radio" name="slide-controlls" id="slide-4" hidden>
 
+	<ul class="slide">
 		<li>
-			<label for="slider-4" class="prev slider-circle"></label>
-			<figure class="slider-item slider-circle">
+			<label for="slide-4" class="prev slide-circle"></label>
+			<figure class="slide-item slide-circle">
 				<img src="img/bebida-1.png" alt="">
+				<label class="slide-controll" for="slide-2">
+					<svg width="100px" height="30px" viewBox="0 0 100 30"><polyline class="navbutton__line" fill="none" stroke="#6CD84E" stroke-width="5" points="69.821,3.795 92.232,26.205 0,26.205"></polyline></svg>
+				</label>
 			</figure>
 
-			<p>Drink random <span class="slider-price">$15</span></p>
+			<p>Drink random <span class="slide-price">$15</span></p>
 
-			<label for="slider-2" class="next slider-circle"></label>
+			<label for="slide-2" class="next slide-circle"></label>
 		</li>
 		<li>
-			<label for="slider-1" class="prev slider-circle"></label>
-			<figure class="slider-item slider-circle">
+			<label for="slide-1" class="prev slide-circle"></label>
+			<figure class="slide-item slide-circle">
 				<img src="img/bebida-2.png" alt="">
+				<label class="slide-controll" for="slide-3">
+					<svg width="100px" height="30px" viewBox="0 0 100 30"><polyline class="navbutton__line" fill="none" stroke="#6CD84E" stroke-width="5" points="69.821,3.795 92.232,26.205 0,26.205"></polyline></svg>
+				</label>
 			</figure>
 
-			<p>Malting <span class="slider-price">$66</span></p>
-			<label for="slider-3" class="next slider-circle"></label>
+			<p>Malting <span class="slide-price">$66</span></p>
+			<label for="slide-3" class="next slide-circle"></label>
 		</li>
 		<li>
-			<label for="slider-2" class="prev slider-circle"></label>
-			<figure class="slider-item slider-circle">
+			<label for="slide-2" class="prev slide-circle"></label>
+			<figure class="slide-item slide-circle">
 				<img src="img/bebida-3.png" alt="">
+				<label class="slide-controll" for="slide-4">
+					<svg width="100px" height="30px" viewBox="0 0 100 30"><polyline class="navbutton__line" fill="none" stroke="#6CD84E" stroke-width="5" points="69.821,3.795 92.232,26.205 0,26.205"></polyline></svg>
+				</label>
 			</figure>
 
-			<p>Good Cocktail <span class="slider-price">$50</span></p>
-			<label for="slider-4" class="next slider-circle"></label>
+			<p>Good Cocktail <span class="slide-price">$50</span></p>
+			<label for="slide-4" class="next slide-circle"></label>
 		</li>
 		<li>
-			<label for="slider-3" class="prev slider-circle"></label>
-			<figure class="slider-item slider-circle">
+			<label for="slide-3" class="prev slide-circle"></label>
+			<figure class="slide-item slide-circle">
 				<img src="img/bebida-4.png" alt="">
+				<label class="slide-controll" for="slide-1">
+					<svg width="100px" height="30px" viewBox="0 0 100 30"><polyline class="navbutton__line" fill="none" stroke="#6CD84E" stroke-width="5" points="69.821,3.795 92.232,26.205 0,26.205"></polyline></svg>
+				</label>
 			</figure>
 
-			<p>Lore ipsum at dolor sit ate <span class="slider-price">$388</span></p>
-			<label for="slider-1" class="next slider-circle"></label>
+			<p>Lore ipsum at dolor sit ate <span class="slide-price">$388</span></p>
+			<label for="slide-1" class="next slide-circle"></label>
 		</li>
 	</ul>
 

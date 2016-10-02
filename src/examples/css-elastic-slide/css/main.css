@@ -4,18 +4,18 @@
 }
 
 body {
-	background: #f6f6f6;
+	background: #ecf0f5;
 }
 
 ul, li {
 	list-style: none;
 }
 
-.slider {
+.slide {
 	height: 100vh;
 }
 
-.slider li {
+.slide li {
 	width: 100%;
 	z-index: 1;
 	top: 50%;
@@ -27,7 +27,7 @@ ul, li {
 	perspective: 300px;
 }
 
-.slider-item {
+.slide-item {
 	padding: 5rem;
 	display: flex;
 	align-items: center;
@@ -38,7 +38,7 @@ ul, li {
 	visibility: hidden;
 }
 
-.slider-circle {
+.slide-circle {
 	background: #fff;
 	width: 28rem;
 	height: 28rem;
@@ -48,12 +48,12 @@ ul, li {
 	z-index: 2;
 }
 
-.slider img {
+.slide img {
 	margin: 1.4rem 0;
 	max-width: 100%;
 }
 
-.slider p {
+.slide p {
 	color: #666;
 	font-family: "PT Sans", arial;
 	width: 100%;
@@ -66,7 +66,7 @@ ul, li {
 	text-transform: uppercase;;
 }
 
-.slider-price {
+.slide-price {
 	color: #000;
 }
 
@@ -88,51 +88,65 @@ ul, li {
 	right: -246px;
 }
 
+.slide-controll {
+	position: fixed;
+	top: 3rem;
+	right: -5rem;
+	cursor: pointer;
+}
+
+.slide-controll polyline {
+	transition: linear .2s all;
+}
+
+.slide-controll:hover polyline{
+	stroke: #464653!important;
+}
 
 /* ----------------------------- Slides Passados ----------------------------- */
-#slider-1:checked ~ li:nth-of-type(4) .slider-item, #slider-1:checked ~ li:nth-of-type(3) .slider-item,
-#slider-2:checked ~ li:nth-of-type(1) .slider-item,
-#slider-2:checked ~ li:nth-of-type(4) .slider-item, #slider-3:checked ~ li:nth-of-type(1) .slider-item,
-#slider-3:checked ~ li:nth-of-type(2) .slider-item, #slider-4:checked ~ li:nth-of-type(3) .slider-item,
-#slider-4:checked ~ li:nth-of-type(3) .slider-item{
+#slide-1:checked ~ ul li:nth-of-type(4) .slide-item, #slide-1:checked ~ ul li:nth-of-type(3) .slide-item,
+#slide-2:checked ~ ul li:nth-of-type(1) .slide-item,
+#slide-2:checked ~ ul li:nth-of-type(4) .slide-item, #slide-3:checked ~ ul li:nth-of-type(1) .slide-item,
+#slide-3:checked ~ ul li:nth-of-type(2) .slide-item, #slide-4:checked ~ ul li:nth-of-type(3) .slide-item,
+#slide-4:checked ~ ul li:nth-of-type(3) .slide-item{
 	transform:translateX(-300%) translateZ(-170px);
 	visibility: hidden;
 }
 
 /* ----------------------------- Próximos Slides ----------------------------- */
-#slider-3:checked ~ li:nth-of-type(4) .slider-item, #slider-4:checked ~ li:nth-of-type(1) .slider-item,
-#slider-2:checked ~ li:nth-of-type(3) .slider-item {
+#slide-3:checked ~ ul li:nth-of-type(4) .slide-item, #slide-4:checked ~ ul li:nth-of-type(1) .slide-item,
+#slide-2:checked ~ ul li:nth-of-type(3) .slide-item {
 	transform:translateX(300%) translateZ(-170px);
 	visibility: hidden;
 }
 
 /* ----------------------------- Animação de checado  ----------------------------- */
-#slider-1:checked ~ li:nth-of-type(1), #slider-2:checked ~ li:nth-of-type(2), #slider-3:checked ~ li:nth-of-type(3),
-#slider-4:checked ~ li:nth-of-type(4){
+#slide-1:checked ~ ul li:nth-of-type(1), #slide-2:checked ~ ul li:nth-of-type(2), #slide-3:checked ~ ul li:nth-of-type(3),
+#slide-4:checked ~ ul li:nth-of-type(4){
 	z-index: 2;
 }
 
-#slider-1:checked ~ li:nth-of-type(1) p, #slider-2:checked ~ li:nth-of-type(2) p, #slider-3:checked ~ li:nth-of-type(3) p,
-#slider-4:checked ~ li:nth-of-type(4) p{
+#slide-1:checked ~ ul li:nth-of-type(1) p, #slide-2:checked ~ ul li:nth-of-type(2) p, #slide-3:checked ~ ul li:nth-of-type(3) p,
+#slide-4:checked ~ ul li:nth-of-type(4) p{
 	transform: translateX(0);
 	opacity: 1;
 	transition-delay: .3s;
 }
 
-#slider-1:checked ~ li:nth-of-type(1) .slider-item, #slider-2:checked ~ li:nth-of-type(2) .slider-item,
-#slider-3:checked ~ li:nth-of-type(3) .slider-item, #slider-4:checked ~ li:nth-of-type(4) .slider-item{
+#slide-1:checked ~ ul li:nth-of-type(1) .slide-item, #slide-2:checked ~ ul li:nth-of-type(2) .slide-item,
+#slide-3:checked ~ ul li:nth-of-type(3) .slide-item, #slide-4:checked ~ ul li:nth-of-type(4) .slide-item{
 	transform:translateX(0);
 	visibility: visible;
 }
 
-#slider-1:checked ~ li:nth-of-type(1) .next, #slider-2:checked ~ li:nth-of-type(2) .next,
-#slider-3:checked ~ li:nth-of-type(3) .next, #slider-4:checked ~ li:nth-of-type(4) .next{
+#slide-1:checked ~ ul li:nth-of-type(1) .next, #slide-2:checked ~ ul li:nth-of-type(2) .next,
+#slide-3:checked ~ ul li:nth-of-type(3) .next, #slide-4:checked ~ ul li:nth-of-type(4) .next{
 	animation: controllScale .3s ease-in-out 1;
 	animation-fill-mode: forwards;
 }
 
-#slider-1:checked ~ li:nth-of-type(1) .prev, #slider-2:checked ~ li:nth-of-type(2) .prev,
-#slider-3:checked ~ li:nth-of-type(3) .prev, #slider-4:checked ~ li:nth-of-type(4) .prev{
+#slide-1:checked ~ ul li:nth-of-type(1) .prev, #slide-2:checked ~ ul li:nth-of-type(2) .prev,
+#slide-3:checked ~ ul li:nth-of-type(3) .prev, #slide-4:checked ~ ul li:nth-of-type(4) .prev{
 	animation: controllScale .3s ease-in-out 1 .15s;
 	animation-fill-mode: forwards;
 }
@@ -160,35 +174,6 @@ footer a {
 
 footer img {
 	width: 80px;
-}
-
-@keyframes enterFigureLeft {
-	0%, 100%{
-		z-index: 99;
-	}
-
-	50% {
-		transform: translateX(-5rem);
-	}
-
-	80% {
-		transform: translateX(2rem);
-	}
-
-	100% {
-		transform: translateX(0);
-	}
-}
-
-@keyframes exitLeft {
-	0%{
-		z-index: 99;
-	}
-
-	100% {
-		transform: translateX(-200%);
-		z-index: 1;
-	}
 }
 
 @keyframes controllScale {
