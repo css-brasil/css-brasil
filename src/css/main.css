@@ -8,6 +8,7 @@
 }
 .page-title {
   font-size: 5rem;
+  padding: 0 5%;
 }
 .header-site-title {
   text-align: center;
@@ -129,16 +130,20 @@ h6 {
 h2 {
   font-size: 2.8rem;
 }
-h3 {
+h3,
+.post h3 span {
   font-size: 2.6rem;
 }
-h4 {
+h4,
+.post h4 span {
   font-size: 2.2rem;
 }
-h5 {
+h5,
+.post h5 span {
   font-size: 2rem;
 }
-h6 {
+h6,
+.post h6 span {
   font-size: 1.2rem;
 }
 p,
@@ -307,6 +312,9 @@ body .smoth-dark {
 }
 .featured-box .figure-box {
   max-width: 520px;
+}
+.featured-box figcaption {
+  overflow: hidden;
 }
 .btn-row .btn {
   display: inline-block;
@@ -1094,8 +1102,14 @@ body .gist .blob-wrapper {
 }
 .bg-yellow #menu-ico,
 .bg-yellow #navigation-list,
-.bg-yellow #navigation-list a {
+.bg-yellow #navigation-list a,
+.bg-yellow #menu-ico .btn-icon {
   color: #009b3a;
+}
+.bg-yellow #menu-ico .btn-icon,
+.bg-yellow #menu-ico .btn-icon:after,
+.bg-yellow #menu-ico .btn-icon:before {
+  background: #009b3a;
 }
 #navigation-action:checked ~ div #menu-ico .btn-icon {
   background: transparent;
