@@ -1,7 +1,7 @@
 ---
 title: Slideshow com efeito elástico usando apenas CSS3
 template: articles/single.hbt
-url: criando-efeito-de-glitch-com-css
+url: criando-slideshow-com-efeito-elastico-usando-apenas-css3
 date: 2016-09-20
 description: Baseado em um exemplo do Codrops, criamos este lindo slide sem nenhuma linha de javascript
 author: Clóvis Neto
