@@ -13,11 +13,11 @@
 	<section class="container-fluid">
 		{{#each collections.playground}}
 			<article class="box bg-yellow playground-item">
-				<a href="#"><h3>{{this.title}}</h3></a>
+				<a href="{{this.author_site_url}}"><h3>{{this.title}}</h3></a>
 				<p class="credits">por <a href="{{this.author_site_url}}">{{this.author}}</a></p>
 
 				<figure class="clear">
-					<a href="#"  class="image-box">
+					<a href="{{this.author_site_url}}"  class="image-box">
 						{{#if this.thumbnail}}
 							<img src="{{this.thumbnail}}" alt="{{this.title}}" />
 						{{else}}
