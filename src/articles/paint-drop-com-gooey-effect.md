@@ -2,10 +2,10 @@
 title: Paint Drop com Gooey Effect
 description: Uma maneira diferente de se utilizar o Gooey Effect de maneira interativa e bonita.
 date: 2016-10-22
-draft: true
+draft: false
 template: articles/single.hbt
 url: paint-drop-com-gooey-effect
-featured: /images/paint-drop.jpg
+featured: /images/paint-drop.png
 author: Jefferson Moura
 tags: Gooey, SVG Filters, Paint Drop
 ---
