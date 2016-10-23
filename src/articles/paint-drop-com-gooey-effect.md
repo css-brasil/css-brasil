@@ -1,0 +1,50 @@
+---
+title: Paint Drop com Gooey Effect
+description: Uma maneira diferente de se utilizar o Gooey Effect de maneira interativa e bonita.
+date: 2016-10-22
+draft: true
+template: articles/single.hbt
+url: paint-drop-com-gooey-effect
+featured: /images/paint-drop.jpg
+author: Jefferson Moura
+tags: Gooey, SVG Filters, Paint Drop
+---
+
+# Paint Drop com Gooey Effect
+
+Recentemente estava lendo um artigo no CSS Tricks sobre um efeito criado pelo brasileiro Lucas Bebber chamado _Gooey Effect_ no qual se utiliza um SVG filter para fazer parecer que os elementos que estão mais perto uns dos outros estão grudados. (https://css-tricks.com/gooey-effect/) , e isso me deu uma inspiração para criar um outro efeito com base no _Gooey_.
+
+A ideia desse efeito é criar a intenção de que está caindo um balde de tinta em seu site.
+
+## Estrutura
+
+Para se criar o efeito, você precisa criar uma pequena estrutura de elementos, é bem simples.
+
+```
+.wrapper
+    ├── .column
+    └── .content
+```
+
+O `.wrapper` é o elemento no qual será adicionado o efeito principal.
+
+Note que a class tem white-space: nowrap e overflow-x: hidden, pra que o não exista espaços indevidos entre as colunas e também não apareça uma coluna extra caso a largura do seu elemento seja inferior ao das colunas.
+
+<p data-height="265" data-theme-id="dark" data-slug-hash="pEGddP" data-default-tab="css,result" data-user="jeffersonmourak" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/jeffersonmourak/pen/pEGddP/">Gooey Effect wrapper</a> by Jefferson Moura (<a href="http://codepen.io/jeffersonmourak">@jeffersonmourak</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+O `.content` é o elemento que você adiciona caso queira ter algum conteúdo dentro do efeito, e assim você pode ter por exemplo o nome da sua aplicação ou a logo da sua empresa, fica ao seu critério as informações contidas no Content.
+
+Basicamente é um quadrado com a mesma cor das colunas,
+
+<p data-height="265" data-theme-id="dark" data-slug-hash="yakPpX" data-default-tab="css,result" data-user="jeffersonmourak" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/jeffersonmourak/pen/yakPpX/">Gooey Effect content</a> by Jefferson Moura (<a href="http://codepen.io/jeffersonmourak">@jeffersonmourak</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+As `.column` São os elementos que irão fazer as linhas da tinta, e assim ficar algo mais &quot;realista&quot;. Elas são divs com tamanho variado e com as bordas inferiores arredondadas.
+
+<p data-height="265" data-theme-id="dark" data-slug-hash="ALNbdy" data-default-tab="css,result" data-user="jeffersonmourak" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/jeffersonmourak/pen/ALNbdy/">Gooey Effect columns</a> by Jefferson Moura (<a href="http://codepen.io/jeffersonmourak">@jeffersonmourak</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+Após isso você pode adicionar uma animação pra parecer realmente que a tinta está sendo derramada na sua página.
+
+![Paint Drop Gif](/images/paint-drop.gif)
