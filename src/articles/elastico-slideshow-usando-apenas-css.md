@@ -7,7 +7,6 @@ description: Baseado em um exemplo do Codrops, criamos este lindo slide sem nenh
 author: Clóvis Neto
 featured: /images/elastic-circle.jpg
 tags: glitch, css clip, animações
-is_box_featured: true
 example_url: http://cssbrasil.org/examples/css-elastic-slide/
 ---
 
