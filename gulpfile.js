@@ -1,18 +1,43 @@
-var gulp = require('gulp'),
-  stylus = require('gulp-stylus'),
-  minifycss = require('gulp-minify-css'),
-  concat = require('gulp-concat');
+// Modules
+// ===========================================
+const gulp = require('gulp');
+const connect = require('gulp-connect');
+const stylus = require('gulp-stylus');
+const metalsmith = require('./build.js');
 
-// Settings tasks
-gulp.task('watch', function() {
-  gulp.watch('stylus/**/*.*', ['css']);
-});
-
-gulp.task('css', function() {
+// Compile Stylus
+// ===========================================
+gulp.task('css', () => {
   gulp.src(['./stylus/main.styl'])
     .pipe(stylus())
-	.pipe(gulp.dest('./src/css'))
-    .pipe(gulp.dest('./build/css'));
+    .pipe(gulp.dest('./src/css'))
+    .pipe(gulp.dest('./build/css'))
+    .pipe(connect.reload());
 });
 
-gulp.task('default', ['css', 'watch']);
+// Build static pages with metalsmith
+// ===========================================
+gulp.task('metalsmith', () => {
+  metalsmith();
+});
+
+// Watch for changes
+// ===========================================
+gulp.task('watch', () => {
+  gulp.watch('./stylus/**/*.*', ['css']);
+  gulp.watch(['./src/**/*.*','./templates/**/*.*'], ['metalsmith']);
+});
+
+// Static server
+// ===========================================
+gulp.task('connect', () => {
+	connect.server({
+		root: './build/',
+		livereload: true
+	});
+});
+
+// More Tasks
+// ===========================================
+gulp.task('build', ['metalsmith', 'css']);
+gulp.task('serve', ['connect', 'watch']);

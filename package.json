@@ -1,14 +1,15 @@
 {
-  "name": "all-animation-css3-brasil",
-  "version": "1.0.0",
-  "description": "",
+  "name": "css-brasil",
+  "version": "0.1.0",
+  "description": "CSS Brasil website",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "author": "Clóvis Neto",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-stylus": "^2.5.0",
@@ -22,9 +23,7 @@
     "metalsmith-tags": "^0.6.1",
     "metalsmith-templates": "^0.5.2",
     "metasmith": "0.0.1",
-    "moment": "^2.8.3"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1"
+    "moment": "^2.8.3",
+    "gulp-connect": "^5.0.0"
   }
 }
