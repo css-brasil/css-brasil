@@ -295,6 +295,9 @@ body .smoth-dark {
 .box.medium-content:nth-of-type(3n+3) {
   margin-right: 0;
 }
+.box.medium-content:nth-child(3n+1) {
+  clear: both;
+}
 .box.medium-content .figure-box {
   margin-right: 0;
 }
@@ -309,9 +312,6 @@ body .smoth-dark {
 .medium-content {
   width: 28.8%;
   float: left;
-}
-.medium-content:nth-of-child(3n+1) {
-  clear: both;
 }
 .featured-box .figure-box {
   max-width: 520px;
