@@ -310,6 +310,9 @@ body .smoth-dark {
   width: 28.8%;
   float: left;
 }
+.medium-content:nth-of-child(3n+1) {
+  clear: both;
+}
 .featured-box .figure-box {
   max-width: 520px;
 }
