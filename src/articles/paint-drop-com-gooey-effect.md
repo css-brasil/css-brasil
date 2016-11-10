@@ -7,6 +7,7 @@ template: articles/single.hbt
 url: paint-drop-com-gooey-effect
 featured: /images/paint-drop.png
 author: Jefferson Moura
+is_box_featured: true
 tags: Gooey, SVG Filters, Paint Drop
 ---
 
