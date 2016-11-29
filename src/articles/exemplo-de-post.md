@@ -2,7 +2,7 @@
 title: Seguuura coração, o CSS Brasil chegou!
 description: Com exemplos fantásticos e artigos incríveis, criamos o CSS Brasil com a expectativa de compartilhar conhecimento e promover taletos.
 date: 2016-09-6
-draft: true
+is_external: true
 template: articles/single.hbt
 url: exemplo-de-post
 featured: /images/css-brasil-wrapper.jpg
