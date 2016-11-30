@@ -12,8 +12,11 @@ tags:
 
 #Eva ganha vida
 
-Eva é uma é uma robô meiga, fofa, maravilhosa, criada pela [Pixar](https://pt.wikipedia.org/wiki/WALL%C2%B7E). Como boa fã, da Pixar, e do CSS, criei uma fanart dela usando formas em CSS.
+Eva é uma robô meiga, fofa, maravilhosa, criada pela [Pixar](https://pt.wikipedia.org/wiki/WALL%C2%B7E). Como boa fã, da Pixar, e do CSS, criei uma fanart dela usando formas em CSS.
 Nesse tutorial será mostrado como adicionar animações na ilustração, então nossa Eva ganhará vida.
+
+Todos os exemplos dessa postagem estão disponíveis no [Codepen](http://codepen.io/collection/XmZvqo/).
+Você pode ler mais sobre animações no meu [guia de bolso](https://github.com/daliannyvieira/css-animations-pocket-guide) ou em outras postagens aqui mesmo no blog. 
 
 ##Montando ~~o esqueleto~~ as peças
 
@@ -24,6 +27,7 @@ http://codepen.io/daliannyvieira/full/amqNZV/
 ##Primeiros ~~passos~~ voos
 
 Nossa Eva não foi construída com pés ou rodinhas. Ela precisa flutuar para voar por aí. Usando a propriedade `animation` vamos animar a classe responsável mostrar seu corpo.
+
 ``` css
 .eve {
   animation-name: up;
@@ -33,6 +37,7 @@ Nossa Eva não foi construída com pés ou rodinhas. Ela precisa flutuar para vo
   animation-direction: alternate;
 }
 ```
+
 O código acima diz ao navegador que queremos que nossa Eva ganhe uma animação chamada up, flutue em um espaço de tempo de 0.4segundos, de forma infinita (não queremos que ela pare, não é? hihi), usando a função de tempo ease-in-out, em direção alternate, fazendo com que ela entre em um looping bonitinho e contínuo.
 
 Cada animação precisa ser definida com um `@keyframe`, que diz **quando**, **onde** e **como** uma propriedade deve ser animada.
@@ -150,4 +155,5 @@ Enquanto seu @keyframe, por sua vez, indica que ela deve girar em 22 graus.
 ```
 Fim! Se você acompanhou esse post até aqui, muito obrigada!
 Você acompanhou uma robô fofinha ganhar vida! ♥ E uma geek se divertir muito no processo.
+
 http://codepen.io/daliannyvieira/pen/gwvrvb
