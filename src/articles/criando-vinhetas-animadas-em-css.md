@@ -7,7 +7,6 @@ description: Preparem a folha e o lápis, pois nesta série iremos muito além d
 author: Clóvis Neto
 featured: /images/criando-vinhetas-com-css.png
 tags: criando vinhetas, séries
-is_box_featured: true
 example_url: http://codepen.io/clovisneto/pen/VmzEmj
 ---
 
