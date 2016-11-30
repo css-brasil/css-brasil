@@ -1,6 +1,6 @@
 ---
 title: Eva ganha vida.
-description: Nesse tutorial será mostrado como adicionar animações na ilustração, então nossa Eva ganhará vida.
+description: Criando uma simples animação com CSS.
 date: 2016-11-30
 template: articles/single.hbt
 url: eve-ganha-vida
