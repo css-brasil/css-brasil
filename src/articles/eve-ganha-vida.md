@@ -68,3 +68,39 @@ Mas agora, ela não se movimenta, apenas tem o tamanho de sua largura transforma
   }
 }
 ```
+http://codepen.io/daliannyvieira/pen/KgQrNN
+
+## Movimentando os braços
+
+A animação arm-left possui a mesma duração, iteração, função de tempo e direção da up e shadow.
+
+``` css
+.arm-left {
+  animation-name: arm-left;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+```
+O @keyframe, por sua vez, diz ao navegador que a animação ao alcançar 100% de sua duração deve fazer a forma arm-left (braço esquerdo) girar em 25 graus.
+
+``` css
+@keyframes arm-left {
+	100% {
+    transform: rotate(25deg);
+  }
+}
+```
+A animação arm-right possui a mesma duração, iteração, função de tempo e direção da arm-left. Mas seu @keyframe diz que ele deve girar em -25 graus.
+
+``` css
+@keyframes arm-right {
+	100% {
+    transform: rotate(-25deg);
+  }
+}
+```
+
+http://codepen.io/daliannyvieira/pen/EgQykE
+
