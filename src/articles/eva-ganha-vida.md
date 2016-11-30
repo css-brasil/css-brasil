@@ -80,15 +80,7 @@ E seu @keyframe diz que ela deve girar em -22 graus.
 
 A animação eye-right tem a mesma duração, iteração, função de tempo e direção da eye-left.
 
-``` css
-.eye-right {
-  animation-name: eye-right;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-}
-```
+<script src="https://gist.github.com/clovisdasilvaneto/1dbf761439e803d0963ea88bf2d5a62d.js"></script>
 
 Enquanto seu @keyframe, por sua vez, indica que ela deve girar em 22 graus.
 
