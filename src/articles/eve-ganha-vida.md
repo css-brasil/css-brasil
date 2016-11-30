@@ -47,6 +47,7 @@ Cada animação precisa ser definida com um `@keyframe`, que diz **quando**, **o
 
 Nosso código diz apenas que quando nossa animação chegar em 100% Eva deve se movimentar até o ponto -25px no eixo Y, em um [plano cartesiano](http://brasilescola.uol.com.br/matematica/plano-cartesiano.htm]), da página.  
 
+Agora Eva já flutua, mas para deixar a composição dela mais realista, precisamos modificar também sua sombra. Afinal, agora ela está se afastando do chão, e a sombra projetada sob ela precisa ser animada também. A animação shadow possui a mesma duração, iteração, função de tempo e direção da up. 
 
 ``` css
 .shadow {
@@ -58,9 +59,11 @@ Nosso código diz apenas que quando nossa animação chegar em 100% Eva deve se 
 }
 ```
 
+Mas agora, ela não se movimenta, apenas tem o tamanho de sua largura transformada, em uma escala de 1.2.
+
 ``` css
 @keyframes shadow {
-	100% {
+  100% {
     transform: scaleX(1.2);
   }
 }
