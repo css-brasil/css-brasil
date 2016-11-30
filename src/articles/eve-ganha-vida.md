@@ -92,7 +92,7 @@ O @keyframe, por sua vez, diz ao navegador que a animação ao alcançar 100% de
   }
 }
 ```
-A animação arm-right possui a mesma duração, iteração, função de tempo e direção da arm-left. Mas seu @keyframe diz que ele deve girar em -25 graus.
+A animação arm-right possui a mesma duração, iteração, função de tempo e direção da arm-left. Mas seu @keyframe diz que ela deve girar em -25 graus.
 
 ``` css
 @keyframes arm-right {
@@ -104,3 +104,50 @@ A animação arm-right possui a mesma duração, iteração, função de tempo e
 
 http://codepen.io/daliannyvieira/pen/EgQykE
 
+## Ganhando emoções
+
+Nossa Eva já consegue flutuar por aí, e mexer seus bracinhos. Mas ainda não parece sentir emoções. Para deixa-la mais empática, vamos adicionar animações também em seus olhos. 
+
+A animação eye-left tem a mesma iteração, função de tempo e direção das anteriores, mas, sua duração é de 2 segundos.
+
+``` css
+.eye-left {
+  animation-name: eye-left;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+```
+E seu @keyframe diz que ela deve girar em -22 graus.
+``` css
+@keyframes eye-left {
+	100% {
+    transform: rotate(-22deg);
+  }
+}
+```
+
+A animação eye-right tem a mesma duração, iteração, função de tempo e direção da eye-left.
+
+``` css
+.eye-right {
+  animation-name: eye-right;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+```
+
+Enquanto seu @keyframe, por sua vez, indica que ela deve girar em 22 graus.
+``` css
+@keyframes eye-right {
+  100% {
+    transform: rotate(22deg);
+  }
+}
+```
+Fim! Se você acompanhou esse post até aqui, muito obrigada!
+Você acompanhou uma robô fofinha ganhar vida! ♥ E uma geek se divertir muito no processo.
+http://codepen.io/daliannyvieira/pen/gwvrvb
