@@ -7,7 +7,6 @@ url: eve-ganha-vida
 featured: /images/eva.png
 author: Dalianny Vieira
 tags: formas, animações
-is_box_featured: true
 example_url: http://codepen.io/daliannyvieira/pen/gwvrvb
 ---
 
