@@ -6,6 +6,16 @@
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
 
+## Run CSS Brasil Local
+
+_In your css-brasil directory, run in your terminal:_
+
+1. npm install
+2. sudo npm install -g httpster
+2. node index for build project
+3. gulp 
+3. cd build && httpster
+
 **After your pull request is merged**
 
 After your pull request is merged, you can safely delete your branch.
