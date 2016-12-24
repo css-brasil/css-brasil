@@ -1,6 +1,6 @@
 ---
 title: Inputs Materializados com CSS.
-description: É possível validar dados com HTML e CSS?.
+description: É possível validar dados com HTML e CSS?
 date: 2016-12-22
 template: articles/single.hbt
 url: inputs-materializados-com-css
@@ -41,7 +41,7 @@ Calma que não para por ai, além de ser possível fazer validações no HTML é
 
 ## Segundamente: Mãos a obra!
 
-Dessa vez nosso objetivo não é o trapézio descendente e sim esse cara aqui: 
+Dessa vez nosso objetivo não é o trapézio descendente e sim esse cara aqui:
 
 ![Exemplo de input do Material Design](https://mariosouto.com/assets/img/input-material-design.gif)
 
@@ -81,7 +81,7 @@ E finalmente aqui está o resultado do nosso experimento!
 Bom, espero que tenham gostado do post em breve trarei mais conteúdos, quaisquer dúvidas deixem nos comentários ou me chamem em alguma rede social!
 
 
-## Referências: 
+## Referências:
 
 * https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation
 * https://developer.mozilla.org/pt-BR/docs/Web/CSS/:invalid
