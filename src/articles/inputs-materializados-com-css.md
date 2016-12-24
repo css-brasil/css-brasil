@@ -27,7 +27,8 @@ Vale ressaltar que **isso é um experimento**, e que experimentos são uma fonte
 ### Data Form Validations
 Faz algum tempo que muitas pessoas utilizam o atributo **required** do HTML5 para fazer algumas validações simples em formulários como no exemplo abaixo:
 
-http://codepen.io/soutomario/pen/bBzZXj
+<p data-height="265" data-theme-id="dark" data-slug-hash="bBzZXj" data-default-tab="html,result" data-user="soutomario" data-embed-version="2" data-pen-title="HTML5 Data Form Validations" class="codepen">See the Pen <a href="http://codepen.io/soutomario/pen/bBzZXj/">HTML5 Data Form Validations</a> by Mario Souto (<a href="http://codepen.io/soutomario">@soutomario</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 As validações com required são bem bacanas, pois elas pegam o [type] do input e tiram por base dele se o campo foi preenchido corretamente ou não, validando e-mails, texts e etc…
 
@@ -46,17 +47,7 @@ Dessa vez nosso objetivo não é o trapézio descendente e sim esse cara aqui:
 
 Indo pelo passo a passo, vamos começar pela estrutura HTML que será bem simples:
 
-```html
-<section>
-	<form action="">
-		<h1>Material Design Input with pure CSS</h1>
-		<div class="input-container">
-			<input id="name" class="input" type="text" pattern=".+" required />
-			<label class="label" for="name">Nome</label>
-		</div>
-	</form>
-</section>
-```
+<script src="https://gist.github.com/soutomario/8fc58a5149603e00d02288ebdeb2d509.js"></script>
 
 1 - Uma tag section e uma form
 2 - Um input-container para agrupar o conjunto da label com o input
@@ -68,92 +59,19 @@ Agora vem a parte do amor com CSS <3
 
 ### Base
 
-```css
-/* Estrutura */
-.input-container {
-  position: relative;
-}
-
-input {
-  border: 0;
-  border-bottom: 2px solid #9e9e9e;
-  outline: none;
-  transition: .2s ease-in-out;
-  box-sizing: border-box;
-}
-
-label {
-  top: 0;
-  left: 0; right: 0;
-  color: #616161;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  font-size: 1rem;
-  cursor: text;
-  transition: .2s ease-in-out;
-  box-sizing: border-box;
-}
-
-input,
-label {
-  width: 100%;
-  height: 3rem;
-  font-size: 1rem;
-}
-```
+<script src="https://gist.github.com/soutomario/184bcff2e14c6e4a45e1b6e0cf7c7a65.js"></script>
 
 A estrutura é bem simples, basicamente aplicamos um estilo no input para ele se parecer com o do Material Design e posicionamentos de forma absoluta o label a esquerda do input-container e centralizado em relação ao input.
 
 ### Interação
 
-```css
-/* Interation */
-input:valid,
-input:focus {
-  border-bottom: 2px solid #26a69a;  
-}
-
-input:valid + label,
-input:focus + label {
-  color: #26a69a;
-  font-size: .8rem;
-  top: -30px;
-  pointer-events: none;
-}
-```
+<script src="https://gist.github.com/soutomario/302b568ba17d5a62c954ee997d70b98b.js"></script>
 
 Aqui é onde acontece a mágica, nós validamos quando o input for valido no HTML e pelo CSS verificamos esse estado, adicionando um efeito ao label que é o elemento seguinte ao input.
 
 E para finalizar com um toque especial vamos dar um tapa no visual:
 
-```css
-/* Just for leave it a little more beautiful */
-* {
-	font-family: sans-serif;
-}
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	min-height: 100vh;
-	background-color: #e0f2f1;
-}
-h1 {
-	color: #616161;
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-section {
-	margin: 15px;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-	padding: 20px;
-	border-radius: 0 0 2px 2px;
-	background-color: #FFF;
-}
-```
+<script src="https://gist.github.com/soutomario/e3013895740025ea91715bbe643138fb.js"></script>
 
 E finalmente aqui está o resultado do nosso experimento!
 
