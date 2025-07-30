@@ -1,7 +1,6 @@
-
-var Metalsmith   = require('metalsmith');
+const Metalsmith   = require('metalsmith');
 var collections  = require('metalsmith-collections');
-var markdown     = require('metalsmith-markdown');
+const markdown = require('metalsmith-markdown');
 var templates    = require('metalsmith-templates');
 var permalinks   = require('metalsmith-permalinks');
 var tags         = require('metalsmith-tags');
@@ -62,5 +61,5 @@ Metalsmith(__dirname)
   .use(templates('handlebars')) // nossos objetos serão passados para o handlebars
   .destination('./build')       // diretório destino
   .build(function(err, files) { // escreve os aquivos no diretório build
-    if (err) { throw err; }     // um handler de erro, sempre é bom
+    if (err) { console.error('Build error:', err); throw err; }     // um handler de erro, sempre é bom
   });

@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
   stylus = require('gulp-stylus'),
-  minifycss = require('gulp-minify-css'),
+  minifycss = require('gulp-clean-css'),
   concat = require('gulp-concat');
 
 // Settings tasks
